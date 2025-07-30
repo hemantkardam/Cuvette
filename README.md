@@ -29,7 +29,7 @@
 
 12. Attribute - Additional Power.
     Attribute Property=Attribute Value
-    Always written in Opening Tag
+    Always written in Opening Tag.
 
 13. Important Tags - html, head, body   
 
@@ -43,3 +43,7 @@
 21. Block and Inline Elements.
 22. Formatting Tags.
 23. Search Engine Optimizations (SEO).
+
+24. HTML5 - Semantic and Non-Semantic HTML Elements.
+25. Semantic Elements - <article>, <section>, <header>, <footer>, <main>, <aside>, <figcaption>
+26. Non-Semantic Elements - <div>, <span>
