@@ -45,5 +45,39 @@
 23. Search Engine Optimizations (SEO).
 
 24. HTML5 - Semantic and Non-Semantic HTML Elements.
-25. Semantic Elements - <article>, <section>, <header>, <footer>, <main>, <aside>, <figcaption>
-26. Non-Semantic Elements - <div>, <span>
+<!-- 25. Semantic Elements - <article>, <section>, <header>, <footer>, <main>, <aside>, <figcaption> -->
+<!-- 26. Non-Semantic Elements - <div>, <span> -->
+
+
+27. Introduction to CSS? - Style the HTML Element - Cascading StyleSheet.
+    Browser Rendering:-
+       Loads HTML => Constructs DOM.
+       Loads CSS => Constructs CSSOM.
+       Combines DOM + CSSOM -> Renders Page.
+
+28. How to write CSS?
+- Inline CSS.
+- Internal CSS.
+- External CSS.
+- Specifity among above CSS Declarations.
+- Inline > Internal > External
+
+29. All Contents inhibits deafult CSS Properties. 
+30. What are Selectors?
+31. Types of Selectors
+- Type or Tag Selector - p, h2, h5,...  
+- Class Selectors - .className...
+- Id Selector. - #Id
+- Specifity among 03 Selectors - Id > class > tag.
+- Attribute Selector - tagName[property="value"].
+- Pseudo-Classes(:state) 
+  => User Action
+  => Tree Structural.
+
+32. Combinators - Combine Selectors to target specific hierarchies.
+- Descendant( )
+- Child(>)
+- Adjacent Sibling(+)
+- General Sibling(~)
+
+33. Psuedo Elements.
