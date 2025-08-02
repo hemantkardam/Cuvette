@@ -73,6 +73,7 @@
 - Pseudo-Classes(:state) 
   => User Action
   => Tree Structural.
+- Universal Selector (*)
 
 32. Combinators - Combine Selectors to target specific hierarchies.
 - Descendant( )
@@ -81,3 +82,19 @@
 - General Sibling(~)
 
 33. Psuedo Elements.
+
+34. CSS Inheritance and Cascading.
+=> Inherited Properties - color, font-family, text-align, line-height,...
+=> Non-Inherited Property - border, margin, paddding, background,...
+=> Control Inheritance - inherit, initial, unset, revert.
+=> CSS Cascading
+
+35. Specificity.
+=> Inline > Id > Class/Attr/Psu-class > Element/Pseudo-elem
+
+36. Box Model.
+37. Block, Inline and Inline-Block.
+38. HTML Forms.
+39. Aspect Ratio.
+40. Iframe.
+41. Tables.

@@ -1,4 +1,4 @@
-ul {
+/* ul {
   background-color: magenta;
 }
 
@@ -81,7 +81,7 @@ li:nth-child(2) {
   color: goldenrod;
 } */
 
-.child ~ span {
+/* .child ~ span {
   color: goldenrod;
 }
 
@@ -96,5 +96,43 @@ h2::before {
 
 p::after {
   content: "hellllo";
+}  */
+
+.parental {
+  color: red;
+  /* border: 5px solid red; */
+  margin-bottom: 100px;
 }
+
+
+p {
+  color: unset !important;
+  margin-bottom: unset;
+  border: inherit;
+}
+
+* {
+  border: 1px solid green;
+}
+
+
+.child {
+  color: purple;
+  color: red;
+}
+
+#childId {
+  color: tomato;
+}
+
+
+.parental .child {
+  background-color: green;
+}
+
+.child {
+  background-color: blue;
+}
+
+
 
