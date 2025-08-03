@@ -98,15 +98,12 @@
 * Padding Box.
 * Border Box.
 * Margin Box. - Margin Collapse, Negative Margin.
-    
 
+37. HTML Forms.
+=> Forms allows users to submit data to a server. (e.g. login, registration, search,...)
 
+38. Tables.
+39. Block, Inline and Inline-Block.
 
-
-
-
-1.  Block, Inline and Inline-Block.
-2.  HTML Forms.
-3.  Aspect Ratio.
-4.  Iframe.
-5.  Tables.
+40. Aspect Ratio.
+41. Iframe.
