@@ -1,0 +1,19 @@
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color:brown;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.dataTable thead {
+  background-color: #f2f2f2;
+}
+
+
