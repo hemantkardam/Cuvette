@@ -108,4 +108,9 @@
 41. CSS Units.
 42. Typography.
 43. CSS Positioning.
-=> Reference to Something.
+=> Reference to Something. 
+- Relative - Static Position.
+- Absolute - Relatively Positioned Parent Element.
+- Fixed - Viewport.
+- Sticky - Relative and Fixed.
+
