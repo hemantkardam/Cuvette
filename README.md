@@ -116,5 +116,5 @@
 44. Flex Box
 => Flex, Flex-Basis, Flex-Shrink, Flex-grow.
 45. CSS Grid.
-46. BootStrap.
+46. BootStrap - Framework.
 
