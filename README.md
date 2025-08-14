@@ -1,5 +1,6 @@
 # MERNFrontendJuly
 
+
 <!-- IDE = Integrated Development Environment -->
 
 1. What is IDE?
@@ -30,7 +31,7 @@
     Attribute Property=Attribute Value
     Always written in Opening Tag.
 
-13. Important Tags - html, head, body
+13. Important Tags - html, head, body   
 
 14. Headings - h1-h6 (h1 is the biggest and h6 is the smallest).
 15. Paragraph - p
@@ -44,39 +45,37 @@
 23. Search Engine Optimizations (SEO).
 
 24. HTML5 - Semantic and Non-Semantic HTML Elements.
-    <!-- 25. Semantic Elements - <article>, <section>, <header>, <footer>, <main>, <aside>, <figcaption> -->
-    <!-- 26. Non-Semantic Elements - <div>, <span> -->
+<!-- 25. Semantic Elements - <article>, <section>, <header>, <footer>, <main>, <aside>, <figcaption> -->
+<!-- 26. Non-Semantic Elements - <div>, <span> -->
 
-25. Introduction to CSS? - Style the HTML Element - Cascading StyleSheet.
+
+27. Introduction to CSS? - Style the HTML Element - Cascading StyleSheet.
     Browser Rendering:-
-    Loads HTML => Constructs DOM.
-    Loads CSS => Constructs CSSOM.
-    Combines DOM + CSSOM -> Renders Page.
+       Loads HTML => Constructs DOM.
+       Loads CSS => Constructs CSSOM.
+       Combines DOM + CSSOM -> Renders Page.
 
-26. How to write CSS?
-
+28. How to write CSS?
 - Inline CSS.
 - Internal CSS.
 - External CSS.
 - Specifity among above CSS Declarations.
 - Inline > Internal > External
 
-29. All Contents inhibits deafult CSS Properties.
+29. All Contents inhibits deafult CSS Properties. 
 30. What are Selectors?
 31. Types of Selectors
-
-- Type or Tag Selector - p, h2, h5,...
+- Type or Tag Selector - p, h2, h5,...  
 - Class Selectors - .className...
 - Id Selector. - #Id
 - Specifity among 03 Selectors - Id > class > tag.
 - Attribute Selector - tagName[property="value"].
-- Pseudo-Classes(:state)
+- Pseudo-Classes(:state) 
   => User Action
   => Tree Structural.
-- Universal Selector (\*)
+- Universal Selector (*)
 
 32. Combinators - Combine Selectors to target specific hierarchies.
-
 - Descendant( )
 - Child(>)
 - Adjacent Sibling(+)
@@ -85,38 +84,61 @@
 33. Psuedo Elements.
 
 34. CSS Inheritance and Cascading.
-    => Inherited Properties - color, font-family, text-align, line-height,...
-    => Non-Inherited Property - border, margin, paddding, background,...
-    => Control Inheritance - inherit, initial, unset, revert.
-    => CSS Cascading
+=> Inherited Properties - color, font-family, text-align, line-height,...
+=> Non-Inherited Property - border, margin, paddding, background,...
+=> Control Inheritance - inherit, initial, unset, revert.
+=> CSS Cascading
 
 35. Specificity.
-    => Inline > Id > Class/Attr/Psu-class > Element/Pseudo-elem
+=> Inline > Id > Class/Attr/Psu-class > Element/Pseudo-elem
 
 36. CSS Box Model.
-    => Every HTML element is treated as a rectangular box by the browser.
-
-- Content Box.
-- Padding Box.
-- Border Box.
-- Margin Box. - Margin Collapse, Negative Margin.
+=> Every HTML element is treated as a rectangular box by the browser.
+* Content Box.
+* Padding Box.
+* Border Box.
+* Margin Box. - Margin Collapse, Negative Margin.
 
 37. HTML Forms.
-    => Forms allows users to submit data to a server. (e.g. login, registration, search,...)
+=> Forms allows users to submit data to a server. (e.g. login, registration, search,...)
 
-38. Block, Inline and Inline-Block.
-39. HTML Tables.
-40. CSS Units.
-41. Typography.
-42. CSS Positioning.
-    => Reference to Something.
-
+39. Block, Inline and Inline-Block.
+    
+40. HTML Tables.
+41. CSS Units.
+42. Typography.
+43. CSS Positioning.
+=> Reference to Something. 
 - Relative - Static Position.
 - Absolute - Relatively Positioned Parent Element.
 - Fixed - Viewport.
 - Sticky - Relative and Fixed.
-
 44. Flex Box
-    => Flex, Flex-Basis, Flex-Shrink, Flex-grow.
+=> Flex, Flex-Basis, Flex-Shrink, Flex-grow.
 45. CSS Grid.
 46. BootStrap - Framework.
+47. Introduction to JavaScript(JS).
+=> High Level.
+=> Intrepretated.
+=> Client-Side Scripting.
+=> Backend (Node.js).
+=> Dynamically typed langauge.
+=> Web Browsers, Mobile Apps, Desktop Apps, Server Environments.
+=> 
+
+
+
+48. JavaScript - Language for all.
+=> High Level.
+=> Interpretated.
+=> Client-Side Scripting.
+=> Backend (Node.js).
+=> Dynamically typed langauge.
+=> Web Browsers, Mobile Apps, Desktop Apps, Server Environments.
+=> Brendan Eich 1995.
+=> Real-world use cases:-
+1. Web Page Interactivity.
+2. SPA (Single Page Applications - React, Angular, Vue.)
+3. Game Development.
+
+49. Variables - let, const, var.
