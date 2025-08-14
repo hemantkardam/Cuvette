@@ -117,4 +117,28 @@
 => Flex, Flex-Basis, Flex-Shrink, Flex-grow.
 45. CSS Grid.
 46. BootStrap - Framework.
+47. Introduction to JavaScript(JS).
+=> High Level.
+=> Intrepretated.
+=> Client-Side Scripting.
+=> Backend (Node.js).
+=> Dynamically typed langauge.
+=> Web Browsers, Mobile Apps, Desktop Apps, Server Environments.
+=> 
 
+
+
+48. JavaScript - Language for all.
+=> High Level.
+=> Interpretated.
+=> Client-Side Scripting.
+=> Backend (Node.js).
+=> Dynamically typed langauge.
+=> Web Browsers, Mobile Apps, Desktop Apps, Server Environments.
+=> Brendan Eich 1995.
+=> Real-world use cases:-
+1. Web Page Interactivity.
+2. SPA (Single Page Applications - React, Angular, Vue.)
+3. Game Development.
+
+49. Variables - let, const, var.
