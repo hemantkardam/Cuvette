@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.box {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-color: blue;
+  height: 120px;
+}
+
+.box2 {
+  background-color: green;
+  height: 167px;
+}
+
+.box3 {
+  background-color: yellow;
+  height: 145px;
+}
+
+.box4 {
+  background-color: purple;
+  height: 130px;
+}
+
+.box5 {
+  background-color: orange;
+  height: 110px;
+}

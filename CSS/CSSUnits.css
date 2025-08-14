@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.absoluteUnits .px {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+}
+
+.relativeUnits {
+  width: 200px;
+  font-size: 10px
+}
+
+.relativeUnits .percent {
+  width: 50%;
+  height: 50px;
+  background-color: blue;
+}
+
+.relativeUnits .vw {
+  width: 50vw;
+  height: 50px;
+  background-color: green;
+}
+
+.relativeUnits .vh {
+  height: 50vh;
+  background-color: yellow;
+}
+
+.relativeUnits .em {
+  background-color: purple;
+  font-size: unset;
+}
+
+.relativeUnits .rem {
+  font-size: 2rem;
+  background-color: orange;
+}
+
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  text-shadow: none;
+  color: #333;
+  white-space: normal;
+  word-break: normal;
+  word-wrap: normal;
+}
