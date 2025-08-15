@@ -330,9 +330,108 @@ const __numbers_ = [1, 2, 3, 4, 5, 6, 7, 8]
 const sum = __numbers_.reduce((acc, curr) => acc + curr, 0)
 console.log(sum)
 
+// Control Flow Deep Dive
+// Loop Variations
+// Function Fundamentals
+// Advanced Function Concepts
+// Error Handling & this Context.
+
+// ? 1. Control Flow Deep Dive
+
+// if-else
+
+function getTemperatureComment(temp) {
+  if(temp > 30) {
+    return "Hot day! Stay Hydrated."
+  } else if(temp > 20){
+    return "Pleasant Weather."
+  } else if(temp > 10){
+    return "Cool, bring a jacket."
+  } else {
+    return "Cold! Bundle up."
+  }
+}
+
+console.log(getTemperatureComment(19))
+
+// Switch
+
+function getDayType(day) {
+  switch(day.toLowerCase()) {
+    case "monday":
+    case "tuesday":
+    case "wednesday":
+    case "thursday":
+    case "friday":
+      return "Weekday"
+    case "saturday":
+    case "sunday":
+      return "Weekend"
+    default:
+      return "Invalid day"      
+  }
+}
+
+console.log(getDayType("Saturday"))
 
 
+// Break
 
+const __nums__ = [1, 2, "three", 4, 5, 6, 7]
+for(let num of __nums__) {
+  if(typeof num !== "number") {
+    console.log('Non-number found, stopping')
+    break;
+  }
+  console.log(num * 2)
+}
+
+
+for(let i = 0; i < 10; i++) {
+  if(i % 2 === 0) continue;
+  console.log(i)
+}
+
+
+// Functions
+
+// 1. Function Declaration
+
+// Regular or Normal
+
+console.log(greet("Suraj"))
+
+function greet(name) {
+  return `Hello, ${name}`
+}
+
+// Anonymous Function
+// Function Expression
+
+let squareExpr = function(num) {
+  return num * num
+}
+console.log(squareExpr(7))
+
+function sumAll() {
+  let total = 0;
+  for(let i = 0; i < arguments.length; i++) {
+    total += arguments[i]
+  }
+  return total
+}
+// arguments = [1, 2, 3, 4]
+// arguments.length
+
+console.log(sumAll(1, 2, 3, 4))
+
+// const __numberss_ = [1, 2, 3, 4, 5, 6, 7, 8]
+
+function sumAllRest(...numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0)
+}
+
+console.log(sumAllRest(1, 2, 3))
 
 
 
