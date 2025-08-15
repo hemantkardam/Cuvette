@@ -219,15 +219,116 @@ console.log(nums.includes(90))
 
 const products = [
   {id: 1, name: "Laptop", inStock: false},
-  {id: 2,name: "Lapdsd", inStock: false},
-  {id: 3,name: "Lasdsd", inStock: true},
+  {id: 2,name: "TV", inStock: false},
+  {id: 3,name: "Mobile", inStock: true},
 ]
 
 const available = products.find(p => p.inStock) 
 console.log(available)
 
-const itemIndex = products.findIndex(p => p.name === "Laptop")
+const itemIndex = products.findIndex(p => p.name === "TV")
 console.log(itemIndex)
+
+
+// Array Transformation
+// => 1. Arrow Functions in Array Methods
+
+// Function is a machine which takes input and gives or returns desired output.
+
+// Regular Function/ Normal Function
+
+// function greet(name) {
+//   return `Hello, ${name}`
+// }
+
+// console.log(greet("Cuvette"))
+
+// Arrow Function - Simpler Syntax
+
+// const greet = (name) => {
+//   const sum = 2 + 3
+//   console.log(sum)
+//   return `Hello, ${name}`
+// }
+// console.log(greet("Cuvette"))
+
+const numbs = [1, 2, 3, 4, 5]
+// []
+// [1, 4, ]
+// Higher Order Functions
+const squares1 = numbs.map(function(num) {
+  return num * num
+})
+
+console.log(squares1)
+
+const squares2 = numbs.map(num => num * num)
+console.log(squares2)
+
+
+// Combining and Slicing Arrays
+
+const arr11 = [1, 2, 3]
+const arr22 = [4, 5, 6]
+
+// Concatenation
+// const combinedArray = arr11.concat(arr22)
+// console.log(combinedArray)
+
+// Slicing - Extracting the Portion of Array
+// const slice1 = combinedArray.slice(1, 4)
+// console.log(slice1)
+
+// Spread Operator
+
+const combineWithSpread = [...arr11, ...arr22]
+console.log(combineWithSpread)
+
+// Iteration Array
+// 1. for...of
+// 2. forEach()
+// 3. Traditional for loop
+
+const animals = ["rabbit", "dog", "cat", "Lion"]
+
+for(const animal of animals) {
+  console.log(animal)
+}
+
+animals.forEach((animal, suraj) => {
+  console.log(`${suraj + 1}: ${animal}`)
+})
+
+
+for(let i = 0; i < animals.length; i++) {
+  console.log(animals[i])
+}
+
+
+// Array Sorting
+// Lexicographical
+const fruitsss = ["banana", "apple", "cherry"]
+fruitsss.sort()
+console.log(fruitsss)
+
+// Numeric Sort
+
+const numbers_ = [10, 5, 34, 12, 32, 11]
+numbers_.sort((a, b) => a - b) // Ascending Order
+console.log(numbers_)
+
+// Filter
+
+const _numbers_ = [1, 2, 3, 4, 5, 6, 7]
+const evens = _numbers_.filter(n => n % 2 === 0)
+console.log(evens)
+
+// Reduce
+
+const __numbers_ = [1, 2, 3, 4, 5, 6, 7, 8]
+// Sum of all numbers in an array
+const sum = __numbers_.reduce((acc, curr) => acc + curr, 0)
+console.log(sum)
 
 
 
