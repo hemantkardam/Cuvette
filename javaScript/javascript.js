@@ -218,14 +218,217 @@ console.log(nums.includes(90));
 
 const products = [
   { id: 1, name: "Laptop", inStock: false },
-  { id: 2, name: "mobile", inStock: true },
-  { id: 3, name: "phone", inStock: true },
+  { id: 2, name: "TV", inStock: false },
+  { id: 3, name: "Mobile", inStock: true },
 ];
 
 const available = products.find((p) => p.inStock);
 console.log(available);
 
-const itemIndex = products.findIndex(
+const itemIndex = products.findIndex((p) => p.name === "TV");
+console.log(itemIndex);
+
+// Array Transformation
+// => 1. Arrow Functions in Array Methods
+
+// Function is a machine which takes input and gives or returns desired output.
+
+// Regular Function/ Normal Function
+
+// function greet(name) {
+//   return `Hello, ${name}`
+// }
+
+// console.log(greet("Cuvette"))
+
+// Arrow Function - Simpler Syntax
+
+// const greet = (name) => {
+//   const sum = 2 + 3
+//   console.log(sum)
+//   return `Hello, ${name}`
+// }
+// console.log(greet("Cuvette"))
+
+const numbs = [1, 2, 3, 4, 5];
+// []
+// [1, 4, ]
+// Higher Order Functions
+const squares1 = numbs.map(function (num) {
+  return num * num;
+});
+
+console.log(squares1);
+
+const squares2 = numbs.map((num) => num * num);
+console.log(squares2);
+
+// Combining and Slicing Arrays
+
+const arr11 = [1, 2, 3];
+const arr22 = [4, 5, 6];
+
+// Concatenation
+// const combinedArray = arr11.concat(arr22)
+// console.log(combinedArray)
+
+// Slicing - Extracting the Portion of Array
+// const slice1 = combinedArray.slice(1, 4)
+// console.log(slice1)
+
+// Spread Operator
+
+const combineWithSpread = [...arr11, ...arr22];
+console.log(combineWithSpread);
+
+// Iteration Array
+// 1. for...of
+// 2. forEach()
+// 3. Traditional for loop
+
+const animals = ["rabbit", "dog", "cat", "Lion"];
+
+for (const animal of animals) {
+  console.log(animal);
+}
+
+animals.forEach((animal, suraj) => {
+  console.log(`${suraj + 1}: ${animal}`);
+});
+
+for (let i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+}
+
+// Array Sorting
+// Lexicographical
+const fruitsss = ["banana", "apple", "cherry"];
+fruitsss.sort();
+console.log(fruitsss);
+
+// Numeric Sort
+
+const numbers_ = [10, 5, 34, 12, 32, 11];
+numbers_.sort((a, b) => a - b); // Ascending Order
+console.log(numbers_);
+
+// Filter
+
+const _numbers_ = [1, 2, 3, 4, 5, 6, 7];
+const evens = _numbers_.filter((n) => n % 2 === 0);
+console.log(evens);
+
+// Reduce
+
+const __numbers_ = [1, 2, 3, 4, 5, 6, 7, 8];
+// Sum of all numbers in an array
+const sum = __numbers_.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
+
+// Control Flow Deep Dive
+// Loop Variations
+// Function Fundamentals
+// Advanced Function Concepts
+// Error Handling & this Context.
+
+// ? 1. Control Flow Deep Dive
+
+// if-else
+
+function getTemperatureComment(temp) {
+  if (temp > 30) {
+    return "Hot day! Stay Hydrated.";
+  } else if (temp > 20) {
+    return "Pleasant Weather.";
+  } else if (temp > 10) {
+    return "Cool, bring a jacket.";
+  } else {
+    return "Cold! Bundle up.";
+  }
+}
+
+console.log(getTemperatureComment(19));
+
+// Switch
+
+function getDayType(day) {
+  switch (day.toLowerCase()) {
+    case "monday":
+    case "tuesday":
+    case "wednesday":
+    case "thursday":
+    case "friday":
+      return "Weekday";
+    case "saturday":
+    case "sunday":
+      return "Weekend";
+    default:
+      return "Invalid day";
+  }
+}
+
+console.log(getDayType("Saturday"));
+
+// Break
+
+const __nums__ = [1, 2, "three", 4, 5, 6, 7];
+for (let num of __nums__) {
+  if (typeof num !== "number") {
+    console.log("Non-number found, stopping");
+    break;
+  }
+  console.log(num * 2);
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) continue;
+  console.log(i);
+}
+
+// Functions
+
+// 1. Function Declaration
+
+// Regular or Normal
+
+console.log(greet("Suraj"));
+
+function greet(name) {
+  return `Hello, ${name}`;
+}
+
+// Anonymous Function
+// Function Expression
+
+let squareExpr = function (num) {
+  return num * num;
+};
+console.log(squareExpr(7));
+
+function sumAll() {
+  let total = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    total += arguments[i];
+  }
+  return total;
+}
+// arguments = [1, 2, 3, 4]
+// arguments.length
+
+console.log(sumAll(1, 2, 3, 4));
+
+// const __numberss_ = [1, 2, 3, 4, 5, 6, 7, 8]
+
+function sumAllRest(...numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(sumAllRest(1, 2, 3));
+
+const available1 = products.find((p) => p.inStock);
+console.log(available);
+
+const itemIndex1 = products.findIndex(
   (p) => p.name === "Laptop" || p.name === "mobile" || p.name === "phone"
 );
 console.log(itemIndex);
